@@ -31,7 +31,7 @@ start(){
   if [ $? -eq 0 ]; then
     echo "${APP_NAME} is already running. pid=${pid}"
   else
-    nohup java -jar ${APP_NAME} --spring.config.location=/www/wwwroot/ball_project/ball_web/application.yml  >> bootlog.out 2>&1 &
+    nohup java -jar ${APP_NAME} --spring.config.location=/www/wwwroot/takeOff/application.yml  >> bootlog.out 2>&1 &
   fi
 }
 
